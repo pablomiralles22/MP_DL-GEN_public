@@ -71,7 +71,27 @@ and a Transformer.
 - Know the different training stages of modern LLMs
 - Know some techniques that are being used to augment LLM capabilities (RAG, tools, feedback loops and self-critique...)
 
-### Lecture 6 - Diffusion models ([Slides]())
+### Lecture 6 - Diffusion models ([Slides](https://docs.google.com/presentation/d/1A145e7MkpcmgIen9mG1r_nj3nkhuQAdMiP6NyQazkKQ/edit?usp=sharing))
+
+This lecture focuses on diffusion models, the current state of the art in image
+content generation. We will explore the fundamentals of diffusion, this includes
+the main learning objective (noise prediction), noise samplers and noise
+schedulers. We will explore the strategy named Denoising Diffusion Probabilistic
+Models, or DDPM as the base for all our explorations. We will observe how a basic
+DDPM example on a rudimentary dataset to illustrate the principles of noise prediction
+and inference with denoising. Furthermore we will have a brief demo of using an actual
+diffusion model locally (or in collab).
+
+**Main learning objectives**
+- Understand the core ideas that diffusion brings
+- Understand the noise prediction objective
+- Understand the denoising inference process
+- Introducing the concepts of stable diffusion
+- Basic understanding of text guidance
+
+**Secondary learning objectives**
+- Running a local diffusion model
+- Code a diffusion minimalistic model from scratch
 
 ## Assignment: Implementing a Conditional Variational Autoencoder (cVAE)
 
