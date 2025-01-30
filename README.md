@@ -1,16 +1,38 @@
-# Master in Deep Learning - Generative Models
+<p align="center"> <a target="_blank"> <img src="https://github.com/adgiz05/graph-neural-networks-dlmasterupm/blob/main/utils/upm_logo.png?raw=true" width="600" alt="UPM Logo"> </a> </p> 
+<h1 align="center">
+    Generative Models
+    <br>
+    <small>Master in Deep Learning - Universidad Politécnica de Madrid</small>
+</h1> 
+<p align="center">Welcome to the official repository for the <strong>Generative Models</strong> course of the <a href="https://masterdeeplearning.etsisi.upm.es/">Master in Deep Learning</a> at the Universidad Politécnica de Madrid (UPM).</p>
+<p align="center">
+<strong>Coordinator:</strong> Javier Huertas-Tato
+<br> 
+<strong>Teachers:</strong> Javier Huertas-Tato & Pablo Miralles-González
+</p>
 
-Welcome to the base repository of the "Generative Models" course! In this README you will find:
-- **Overview of the lectures**. An overview of each of the lectures, with a brief summary, the learning objectives and links to the slides.
-- **Assignment**. A brief description of the assignment.
-- **Environment setup**. Some simple steps to recreate our conda environment, which should have everything you need for the course!
+## 📖 Lectures
+### Lecture 1 - Introduction to Variational Autoencoders ([📈 Slides](session_1/MP_DL-GEN-1-AE-es.pptx) | [📎 Material](session_1))
 
-You will also find one directory for each class. Inside, you will find an accompanying notebook to the lectures, as well as notebooks with exercises and their solutions.
+In this lecture, we introduce Variational Autoencoders (VAEs), a generative deep
+learning model that extends classical autoencoders by incorporating
+probabilistic latent space modeling. We discuss the motivation behind VAEs,
+their mathematical foundations, and their applications in data generation. The
+lecture covers key concepts such as the reparameterization trick and the
+mathematical formulation with the Kullback-Leibler divergence.
 
-## Lectures
-### Lecture 1 - Introduction to Variational Autoencoders ([Slides]())
+**Main learning objectives**
 
-### Lecture 2 - Variational Autoencoders, further topics ([Slides](https://upm365-my.sharepoint.com/:p:/g/personal/pablo_miralles_upm_es/EXRC90YW1ghFtacgPEZGPZoBjbKo0KU3gE4QRpy3hriSuw?e=f8nB8v))
+- Understand the motivation behind generative models and why VAEs are useful.
+- Learn the mathematical formulation of VAEs.
+- Understand the reparameterization trick and why it is necessary for backpropagation.  Gain an intuition for how VAEs learn meaningful latent representations for data generation.
+- Implement a basic VAE using PyTorch.
+
+**Secondary learning objectives**
+
+- Visualize latent space representations and their effects on generated samples.
+
+### Lecture 2 - Variational Autoencoders, further topics ([📈 Slides](https://upm365-my.sharepoint.com/:p:/g/personal/pablo_miralles_upm_es/EXRC90YW1ghFtacgPEZGPZoBjbKo0KU3gE4QRpy3hriSuw?e=f8nB8v) | [📎 Material](session_2))
 
 In this lecture we continue learning about Variational Autoencoders. We learn
 the necessary layers to build a Convolutional VAEs, and discuss VAE variations
@@ -28,7 +50,7 @@ VAE, designed for generating data conditioned on specific attributes.
 **Secondary learning objectives**
 - Being able to code VAEs and cVAEs from scratch.
 
-### Lecture 3 - Introduction to Generative Adversarial Networks ([Slides](https://upm365-my.sharepoint.com/:p:/g/personal/pablo_miralles_upm_es/EXkiiMBTVf5GhpO3hy8Ug1gBigGxEFF0lOnIpYjO3dRp-w?e=jy6oIi)
+### Lecture 3 - Introduction to Generative Adversarial Networks ([📈 Slides](https://upm365-my.sharepoint.com/:p:/g/personal/pablo_miralles_upm_es/EXkiiMBTVf5GhpO3hy8Ug1gBigGxEFF0lOnIpYjO3dRp-w?e=jy6oIi) | [📎 Material](session_3))
 
 This lecture introduces Generative Adversarial Networks (GANs). We will cover
 the training procedure and put it into practice with the MNIST dataset. We will
@@ -47,9 +69,20 @@ practical tips to solve these problems and improve performance.
 - Being able to code WGANs from scratch.
 - Understand the probabilistic intuition behind the generator's loss, with the probabilistic divergence metric, and how that relates GANs and WGANs.
 
-### Lecture 4 - Generative Adversarial Networks assignment ([Slides]())
+### Lecture 4 - Generative Adversarial Networks assignment ([📎 Material](session_4))
 
-### Lecture 5 - Autoregressive text generation ([Slides](https://upm365-my.sharepoint.com/:p:/g/personal/pablo_miralles_upm_es/EXOIHKUonItKnHnnh-G513oBvyJQOJ4PQ1VCSzzJDX8UFA?e=XgW8x7))
+In the fourth session we continue with Generative Adversarial Networks by
+programming a variant called CycleGAN, solidifying the main concepts and showing how GANs
+can be used for much more than just generating new examples. In particular, CycleGANs are
+applied for Image2Image translation. We will be using them to transform horses to zebras
+in images, and viceversa.
+
+**Main learning objectives**
+- Understand how GANs can be applied to other tasks such as Image2Image translation.
+- Understand CycleGANs conceptually.
+
+
+### Lecture 5 - Autoregressive text generation ([📈 Slides](https://upm365-my.sharepoint.com/:p:/g/personal/pablo_miralles_upm_es/EXOIHKUonItKnHnnh-G513oBvyJQOJ4PQ1VCSzzJDX8UFA?e=XgW8x7) | [📎 Material](session_5))
 
 This lecture covers the fundamentals of autoregressive text generation, focusing
 on essential steps for building and training effective models. We’ll begin with
@@ -71,7 +104,7 @@ and a Transformer.
 - Know the different training stages of modern LLMs
 - Know some techniques that are being used to augment LLM capabilities (RAG, tools, feedback loops and self-critique...)
 
-### Lecture 6 - Diffusion models ([Slides](https://docs.google.com/presentation/d/1A145e7MkpcmgIen9mG1r_nj3nkhuQAdMiP6NyQazkKQ/edit?usp=sharing))
+### Lecture 6 - Diffusion models ([📈 Slides](https://docs.google.com/presentation/d/1A145e7MkpcmgIen9mG1r_nj3nkhuQAdMiP6NyQazkKQ/edit?usp=sharing) | [📎 Material](session_6))
 
 This lecture focuses on diffusion models, the current state of the art in image
 content generation. We will explore the fundamentals of diffusion, this includes
@@ -93,7 +126,7 @@ diffusion model locally (or in collab).
 - Running a local diffusion model
 - Code a diffusion minimalistic model from scratch
 
-## Assignment: Implementing a Conditional Variational Autoencoder (cVAE)
+## ✏️ Assignment: Implementing a Conditional Variational Autoencoder (cVAE)
 
 **Objective**:  
 Develop a Conditional Variational Autoencoder (cVAE) to understand its structure, functionality, and application in generating conditioned outputs.  
@@ -106,13 +139,7 @@ A Jupyter notebook containing:
 - Visualizations of generated samples.  
 - A brief written explanation of your results and key observations.  
 
-**Deadline**: TBD
-
-**Grading Criteria**:  
-- Completeness of implementation
-- Model performance and results
-- Clarity and organization of the notebook
-- Quality of explanations and visualizations
+**Deadline**: 16 Feb 2025
 
 Good luck, and happy coding!  
 
